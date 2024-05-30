@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+
+
+h1,h2{
+    font-family: Young Serif;
+}
+
+p, li, strong, td, h3{
+    font-family: outfit;
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -14,6 +24,54 @@ body{
 
 main{
     background-color:hsl(0, 0%, 100%) ;
+    width: 900px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
+    padding: 50px;
+    gap: 30px;
+}
+
+main img{
+    width: 800px;
+    border-radius: 13px;
+    align-self: center;
+}
+
+main h1{
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
+}
+
+p, li{
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main div{
+    background-color: hsl(330, 100%, 98%);
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+main div h3{
+    font-size: 20px;
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
+
+main div ul{
+    padding-left: 25px;
+    line-height: 35px;
+}
+
+main div ul li{
+    padding-left: 20px;
 }
