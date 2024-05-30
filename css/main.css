@@ -14,7 +14,7 @@ h1,h2{
     font-family: Young Serif;
 }
 
-p, li, strong, td, h3{
+p, li, strong, td, h3, table{
     font-family: outfit;
 }
 
@@ -43,23 +43,21 @@ body{
 
 main{
     background-color:hsl(0, 0%, 100%) ;
-    width: 900px;
+    width: 40%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    margin: 50px 0 50px;
+    padding: 3%;
+    margin: 3% 0 3%;
     gap: 30px;
 }
-
-
 
 
 /* MAIN INTRODUCTION STYLES */
 
 
 main img{
-    width: 800px;
+    width: 100%;
     border-radius: 13px;
     align-self: center;
 }
@@ -70,13 +68,21 @@ main h1{
     font-size: 45px;
 }
 
-
+@media (max-width: 375px){
+    main{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 5%;
+    }
+}
 
 
 /* DIV PREPARATION TIME STYLES */
 
 
-p, li{
+p, li, table{
     color: hsl(30, 10%, 34%);
     font-size: 16px;
     font-weight: 400;
@@ -163,7 +169,18 @@ ol li::marker{
 
 
 
-
-
-
 /* NUTRITION TABLE STYLES */
+
+hr{
+    border-color: rgb(255, 255, 255);
+}
+
+table{
+    font-size: 17px;
+    padding: 10px 0 10px 0;
+}
+
+.nutrition{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
