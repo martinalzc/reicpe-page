@@ -6,6 +6,10 @@
 
 
 
+
+/* GLOBAL STYLES */
+
+
 h1,h2{
     font-family: Young Serif;
 }
@@ -14,13 +18,28 @@ p, li, strong, td, h3{
     font-family: outfit;
 }
 
+p{
+    line-height: 25px;
+}
+
+
+
+
+/* BODY STYLES */
+
+
 body{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsl(30, 54%, 90%);
 }
+
+
+
+
+/* MAIN STYLES */
+
 
 main{
     background-color:hsl(0, 0%, 100%) ;
@@ -29,8 +48,15 @@ main{
     display: flex;
     flex-direction: column;
     padding: 50px;
+    margin: 50px 0 50px;
     gap: 30px;
 }
+
+
+
+
+/* MAIN INTRODUCTION STYLES */
+
 
 main img{
     width: 800px;
@@ -41,7 +67,14 @@ main img{
 main h1{
     color: hsl(24, 5%, 18%);
     font-weight: 400;
+    font-size: 45px;
 }
+
+
+
+
+/* DIV PREPARATION TIME STYLES */
+
 
 p, li{
     color: hsl(30, 10%, 34%);
@@ -75,3 +108,62 @@ main div ul{
 main div ul li{
     padding-left: 20px;
 }
+
+ul li::marker{
+    color: hsl(332, 51%, 32%);
+    font-size: 13px;
+}
+
+
+
+
+/* INGREDIENTS SECTION STYLES */
+
+
+h2{
+    color:  hsl(14, 45%, 36%);
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.marker-brown li{
+    padding-left: 20px;
+}
+
+.marker-brown{
+    padding-left: 25px;
+    line-height: 35px;
+}
+
+.marker-brown li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+
+
+
+/* INSTRUCTIONS SECTION STYLES */
+
+ol li{
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+ol{
+    padding-left: 25px;
+    line-height: 35px;
+}
+
+ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* NUTRITION TABLE STYLES */
